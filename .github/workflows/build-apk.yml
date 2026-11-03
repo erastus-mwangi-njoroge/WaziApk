@@ -1,0 +1,136 @@
+name: Build Android APK
+
+# Every push to main builds a release APK and attaches it to the workflow run as an
+# artifact (Actions tab -> the run -> "Artifacts" -> wazi-android-apk).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:          # also lets you run it by hand from the Actions tab
+
+concurrency:
+  group: android-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  FLUTTER_VERSION: "3.32.8"   # pinned so builds are reproducible; bump deliberately
+  ANDROID_ORG: com.wazi       # app id = com.wazi.wazi — must match the Android app in Firebase
+  MIN_SDK: "23"               # Android 6.0 (Marshmallow)
+
+jobs:
+  apk:
+    name: Build release APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    defaults:
+      run:
+        # Repo layout: wazi-app/wazi-app/mobile. Change this (and the artifact path
+        # below) if you move the Flutter project.
+        working-directory: wazi-app/wazi-app/mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      # Fail fast, before the slow setup, if Firebase isn't configured.
+      - name: Prepare Firebase config
+        env:
+          GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
+        run: |
+          if [ -n "$GOOGLE_SERVICES_JSON" ]; then
+            printf '%s' "$GOOGLE_SERVICES_JSON" > "$RUNNER_TEMP/google-services.json"
+          elif [ -f google-services.json ]; then
+            cp google-services.json "$RUNNER_TEMP/google-services.json"
+          else
+            echo "::error title=Firebase config missing::Add your Firebase google-services.json as a repository secret named GOOGLE_SERVICES_JSON (Settings > Secrets and variables > Actions), or commit it as wazi-app/wazi-app/mobile/google-services.json. See mobile/README.md."
+            exit 1
+          fi
+          python3 tools/google_services_to_defines.py "$RUNNER_TEMP/google-services.json" "${ANDROID_ORG}.wazi" "$RUNNER_TEMP/firebase-defines.json"
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+
+      # The repo only holds lib/ + pubspec.yaml; generate android/ with the pinned Flutter
+      # version, then put our own lib/ and pubspec back (so `create` can't clobber them).
+      - name: Generate Android project
+        run: |
+          mkdir -p "$RUNNER_TEMP/wazi-src"
+          cp -r lib "$RUNNER_TEMP/wazi-src/lib"
+          cp pubspec.yaml "$RUNNER_TEMP/wazi-src/pubspec.yaml"
+          flutter create --org "$ANDROID_ORG" --project-name wazi --platforms=android .
+          rm -rf lib test
+          cp -r "$RUNNER_TEMP/wazi-src/lib" lib
+          cp "$RUNNER_TEMP/wazi-src/pubspec.yaml" pubspec.yaml
+          python3 tools/patch_android.py android "$MIN_SDK"
+
+      # Same signing key every build, so a new APK installs over the previous one.
+      # Default: the dev keystore in signing/. For your own key, add secret
+      # ANDROID_KEYSTORE_BASE64 (alias androiddebugkey, store+key password "android").
+      - name: Install signing key
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          mkdir -p ~/.android
+          if [ -n "$KEYSTORE_B64" ]; then
+            printf '%s' "$KEYSTORE_B64" | base64 -d > ~/.android/debug.keystore
+          else
+            cp signing/wazi-dev.keystore ~/.android/debug.keystore
+          fi
+
+      - name: Install packages
+        run: flutter pub get
+
+      - name: Generate launcher icons
+        run: dart run flutter_launcher_icons -f flutter_launcher_icons.yaml
+
+      - name: Analyze (informational)
+        continue-on-error: true
+        run: flutter analyze --no-fatal-infos --no-fatal-warnings
+
+      - name: Build release APK
+        run: >
+          flutter build apk --release
+          --build-number=${{ github.run_number }}
+          --dart-define-from-file="$RUNNER_TEMP/firebase-defines.json"
+
+      - name: Verify APK targets Android 6+
+        run: |
+          APK=build/app/outputs/flutter-apk/app-release.apk
+          AAPT="$(ls -d "$ANDROID_HOME"/build-tools/*/aapt2 | sort -V | tail -1)"
+          "$AAPT" dump badging "$APK" | grep -E "^package:|^sdkVersion|^targetSdkVersion|^application-label:"
+          "$AAPT" dump badging "$APK" | grep -q "^sdkVersion:'${MIN_SDK}'" \
+            || { echo "::error::APK minSdk is not ${MIN_SDK}"; exit 1; }
+
+      - name: Name the APK
+        run: |
+          mkdir -p dist
+          cp build/app/outputs/flutter-apk/app-release.apk "dist/wazi-${GITHUB_SHA::7}.apk"
+          sha256sum dist/*.apk | tee dist/SHA256SUMS.txt
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wazi-android-apk
+          path: wazi-app/wazi-app/mobile/dist/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Summary
+        run: |
+          {
+            echo "### WAZI APK built :white_check_mark:"
+            echo ""
+            echo "- Commit: \`${GITHUB_SHA::7}\`  ·  build number: ${{ github.run_number }}"
+            echo "- Works on Android 6.0 (API 23) and newer"
+            echo "- Size: $(du -h dist/*.apk | cut -f1)"
+            echo ""
+            echo "Download **wazi-android-apk** from the *Artifacts* section at the bottom of this page, unzip it, and open the .apk on your phone (allow \"install unknown apps\" for your browser or file manager)."
+          } >> "$GITHUB_STEP_SUMMARY"

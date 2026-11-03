@@ -1,0 +1,40 @@
+import { Component } from '@angular/core';
+
+/** The WAZI mark — a house with its door open (wazi = open/vacant) inside the amenity radar.
+ *  Source of truth: branding/make_icons.py. Size it from the outside, e.g. class="brand-mark". */
+@Component({
+  selector: 'app-brand-logo',
+  standalone: true,
+  template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" role="img" aria-label="WAZI">
+  <defs>
+    <linearGradient id="wazi-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B8A62"/><stop offset="1" stop-color="#1F4E37"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" role="img" aria-label="WAZI" rx="112" fill="url(#wazi-bg)"/>
+  <g transform="translate(256 256) scale(1.2) translate(-256 -256)">
+    <polygon points="256.0,122.0 389.1,218.7 338.3,375.3 173.7,375.3 122.9,218.7" fill="#FFFDF6" fill-opacity="0.08" stroke="#FFFDF6" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+    <polygon points="256.0,189.2 325.2,239.5 298.8,320.9 213.2,320.9 186.8,239.5" fill="none" stroke="#FFFDF6" stroke-opacity="0.28" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="256" y1="262" x2="256.0" y2="122.0" stroke="#FFFDF6" stroke-opacity="0.18" stroke-width="3"/>
+    <line x1="256" y1="262" x2="389.1" y2="218.7" stroke="#FFFDF6" stroke-opacity="0.18" stroke-width="3"/>
+    <line x1="256" y1="262" x2="338.3" y2="375.3" stroke="#FFFDF6" stroke-opacity="0.18" stroke-width="3"/>
+    <line x1="256" y1="262" x2="173.7" y2="375.3" stroke="#FFFDF6" stroke-opacity="0.18" stroke-width="3"/>
+    <line x1="256" y1="262" x2="122.9" y2="218.7" stroke="#FFFDF6" stroke-opacity="0.18" stroke-width="3"/>
+    <g transform="translate(256 320) scale(1.16) translate(-256 -320)">
+    <polygon points="240,330 272,330 300,352 222,352" fill="#FFFDF6" fill-opacity="0.30"/>
+    <polygon points="184,264 256,188 328,264" fill="#FFFDF6" stroke="#FFFDF6" stroke-width="12" stroke-linejoin="round"/>
+    <rect x="206" y="258" width="100" height="72" rx="6" fill="#F7F3E8"/>
+    <path d="M240 330 V288 a6 6 0 0 1 6 -6 h20 a6 6 0 0 1 6 6 V330 Z" fill="#1F4E37"/>
+    <path d="M244 330 V290 a4 4 0 0 1 4 -4 h16 a4 4 0 0 1 4 4 V330 Z" fill="#E3A72E"/>
+    <polygon points="244,286 224,294 224,334 244,330" fill="#B8631F"/>
+    </g>
+    <circle cx="256.0" cy="122.0" r="12" fill="#E3A72E" stroke="#1F4E37" stroke-width="4"/>
+    <circle cx="389.1" cy="218.7" r="12" fill="#E3A72E" stroke="#1F4E37" stroke-width="4"/>
+    <circle cx="338.3" cy="375.3" r="12" fill="#E3A72E" stroke="#1F4E37" stroke-width="4"/>
+    <circle cx="173.7" cy="375.3" r="12" fill="#E3A72E" stroke="#1F4E37" stroke-width="4"/>
+    <circle cx="122.9" cy="218.7" r="12" fill="#E3A72E" stroke="#1F4E37" stroke-width="4"/>
+  </g>
+</svg>`,
+  styles: [':host { display: block; }'],
+})
+export class BrandLogoComponent {}

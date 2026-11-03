@@ -1,0 +1,10 @@
+# Generates the Android launcher icons from the WAZI logo (see ../branding/).
+# Run (CI does this for you):  dart run flutter_launcher_icons -f flutter_launcher_icons.yaml
+flutter_launcher_icons:
+  android: true
+  ios: false
+  # Legacy square icon, used on Android 7.1 and below (incl. Android 6) — already rounded.
+  image_path: "assets/icon/wazi_icon_1024.png"
+  # Adaptive icon (Android 8+): launcher masks the layers to the user's icon shape.
+  adaptive_icon_background: "assets/icon/wazi_icon_background_1024.png"
+  adaptive_icon_foreground: "assets/icon/wazi_icon_foreground_1024.png"

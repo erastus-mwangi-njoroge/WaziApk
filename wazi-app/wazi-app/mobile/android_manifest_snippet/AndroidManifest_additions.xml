@@ -1,0 +1,18 @@
+<!--
+  Add these lines inside <manifest> (for permissions) and ensure your
+  application's targetSdkVersion / compileSdkVersion are recent (34+),
+  which `flutter create` sets up by default.
+
+  File to edit after `flutter create .`:  android/app/src/main/AndroidManifest.xml
+-->
+
+<!-- Permissions: place these as direct children of <manifest ...> ... </manifest> -->
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+<!-- For devices older than Android 13 (API 33) -->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
+<!-- Optional but recommended: declare camera as not strictly required,
+     so the app still installs on devices/emulators without a camera -->
+<uses-feature android:name="android.hardware.camera" android:required="false" />

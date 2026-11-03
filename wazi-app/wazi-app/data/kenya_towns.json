@@ -1,0 +1,2101 @@
+{
+ "_comment": "Canonical list of Kenyan urban centres, grouped by county. Edit this file, then run: python3 tools/gen_towns.py",
+ "counties": [
+  {
+   "county": "Nairobi City",
+   "towns": [
+    {
+     "name": "Nairobi",
+     "areas": [
+      "Kilimani",
+      "Kasarani",
+      "Rongai",
+      "Ruaka",
+      "Embakasi",
+      "Westlands",
+      "Kileleshwa",
+      "Lavington",
+      "Karen",
+      "Langata",
+      "South B",
+      "South C",
+      "Nairobi West",
+      "Madaraka",
+      "Upper Hill",
+      "Donholm",
+      "Buruburu",
+      "Umoja",
+      "Kayole",
+      "Utawala",
+      "Komarock",
+      "Njiru",
+      "Pipeline",
+      "Fedha",
+      "Imara Daima",
+      "Roysambu",
+      "Zimmerman",
+      "Githurai",
+      "Kahawa West",
+      "Kahawa Sukari",
+      "Ruaraka",
+      "Eastleigh",
+      "Pangani",
+      "Parklands",
+      "Highridge",
+      "Kangemi",
+      "Dagoretti",
+      "Kawangware",
+      "Riruta",
+      "Satellite",
+      "Ngara",
+      "Kibera",
+      "Mathare",
+      "Huruma",
+      "Kariobangi",
+      "Dandora",
+      "Gigiri",
+      "Runda",
+      "Muthaiga",
+      "Spring Valley",
+      "Loresho",
+      "Kitisuru",
+      "Garden Estate",
+      "Hurlingham",
+      "Woodley",
+      "Industrial Area",
+      "Mombasa Road"
+     ]
+    }
+   ]
+  },
+  {
+   "county": "Mombasa",
+   "towns": [
+    {
+     "name": "Mombasa",
+     "areas": [
+      "Nyali",
+      "Bamburi",
+      "Shanzu",
+      "Kisauni",
+      "Likoni",
+      "Changamwe",
+      "Mikindani",
+      "Tudor",
+      "Old Town",
+      "Ganjoni",
+      "Kizingo",
+      "Bombolulu",
+      "Mkomani",
+      "Magongo",
+      "Miritini",
+      "Jomvu",
+      "Mwembe Tayari",
+      "Port Reitz",
+      "Tononoka"
+     ]
+    }
+   ]
+  },
+  {
+   "county": "Kwale",
+   "towns": [
+    {
+     "name": "Kwale",
+     "areas": []
+    },
+    {
+     "name": "Ukunda",
+     "areas": []
+    },
+    {
+     "name": "Diani",
+     "areas": []
+    },
+    {
+     "name": "Msambweni",
+     "areas": []
+    },
+    {
+     "name": "Lunga Lunga",
+     "areas": []
+    },
+    {
+     "name": "Kinango",
+     "areas": []
+    },
+    {
+     "name": "Kikoneni",
+     "areas": []
+    },
+    {
+     "name": "Vanga",
+     "areas": []
+    },
+    {
+     "name": "Samburu",
+     "areas": []
+    },
+    {
+     "name": "Mackinnon Road",
+     "areas": []
+    },
+    {
+     "name": "Tiwi",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kilifi",
+   "towns": [
+    {
+     "name": "Kilifi",
+     "areas": []
+    },
+    {
+     "name": "Malindi",
+     "areas": []
+    },
+    {
+     "name": "Mtwapa",
+     "areas": []
+    },
+    {
+     "name": "Watamu",
+     "areas": []
+    },
+    {
+     "name": "Mariakani",
+     "areas": []
+    },
+    {
+     "name": "Kaloleni",
+     "areas": []
+    },
+    {
+     "name": "Mazeras",
+     "areas": []
+    },
+    {
+     "name": "Rabai",
+     "areas": []
+    },
+    {
+     "name": "Kikambala",
+     "areas": []
+    },
+    {
+     "name": "Vipingo",
+     "areas": []
+    },
+    {
+     "name": "Bamba",
+     "areas": []
+    },
+    {
+     "name": "Ganze",
+     "areas": []
+    },
+    {
+     "name": "Gongoni",
+     "areas": []
+    },
+    {
+     "name": "Marafa",
+     "areas": []
+    },
+    {
+     "name": "Mambrui",
+     "areas": []
+    },
+    {
+     "name": "Gede",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Tana River",
+   "towns": [
+    {
+     "name": "Hola",
+     "areas": []
+    },
+    {
+     "name": "Garsen",
+     "areas": []
+    },
+    {
+     "name": "Madogo",
+     "areas": []
+    },
+    {
+     "name": "Bura Tana",
+     "areas": []
+    },
+    {
+     "name": "Kipini",
+     "areas": []
+    },
+    {
+     "name": "Wenje",
+     "areas": []
+    },
+    {
+     "name": "Ngao",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Lamu",
+   "towns": [
+    {
+     "name": "Lamu",
+     "areas": []
+    },
+    {
+     "name": "Mokowe",
+     "areas": []
+    },
+    {
+     "name": "Mpeketoni",
+     "areas": []
+    },
+    {
+     "name": "Witu",
+     "areas": []
+    },
+    {
+     "name": "Hindi",
+     "areas": []
+    },
+    {
+     "name": "Faza",
+     "areas": []
+    },
+    {
+     "name": "Kiunga",
+     "areas": []
+    },
+    {
+     "name": "Hongwe",
+     "areas": []
+    },
+    {
+     "name": "Mkunumbi",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Taita Taveta",
+   "towns": [
+    {
+     "name": "Voi",
+     "areas": []
+    },
+    {
+     "name": "Wundanyi",
+     "areas": []
+    },
+    {
+     "name": "Mwatate",
+     "areas": []
+    },
+    {
+     "name": "Taveta",
+     "areas": []
+    },
+    {
+     "name": "Maungu",
+     "areas": []
+    },
+    {
+     "name": "Werugha",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Garissa",
+   "towns": [
+    {
+     "name": "Garissa",
+     "areas": []
+    },
+    {
+     "name": "Dadaab",
+     "areas": []
+    },
+    {
+     "name": "Masalani",
+     "areas": []
+    },
+    {
+     "name": "Modogashe",
+     "areas": []
+    },
+    {
+     "name": "Balambala",
+     "areas": []
+    },
+    {
+     "name": "Hulugho",
+     "areas": []
+    },
+    {
+     "name": "Ijara",
+     "areas": []
+    },
+    {
+     "name": "Liboi",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Wajir",
+   "towns": [
+    {
+     "name": "Wajir",
+     "areas": []
+    },
+    {
+     "name": "Habaswein",
+     "areas": []
+    },
+    {
+     "name": "Griftu",
+     "areas": []
+    },
+    {
+     "name": "Buna",
+     "areas": []
+    },
+    {
+     "name": "Eldas",
+     "areas": []
+    },
+    {
+     "name": "Tarbaj",
+     "areas": []
+    },
+    {
+     "name": "Bute",
+     "areas": []
+    },
+    {
+     "name": "Hadado",
+     "areas": []
+    },
+    {
+     "name": "Diff",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Mandera",
+   "towns": [
+    {
+     "name": "Mandera",
+     "areas": []
+    },
+    {
+     "name": "Elwak",
+     "areas": []
+    },
+    {
+     "name": "Rhamu",
+     "areas": []
+    },
+    {
+     "name": "Takaba",
+     "areas": []
+    },
+    {
+     "name": "Lafey",
+     "areas": []
+    },
+    {
+     "name": "Banisa",
+     "areas": []
+    },
+    {
+     "name": "Kotulo",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Marsabit",
+   "towns": [
+    {
+     "name": "Marsabit",
+     "areas": []
+    },
+    {
+     "name": "Moyale",
+     "areas": []
+    },
+    {
+     "name": "Sololo",
+     "areas": []
+    },
+    {
+     "name": "Laisamis",
+     "areas": []
+    },
+    {
+     "name": "Loiyangalani",
+     "areas": []
+    },
+    {
+     "name": "North Horr",
+     "areas": []
+    },
+    {
+     "name": "Merille",
+     "areas": []
+    },
+    {
+     "name": "Turbi",
+     "areas": []
+    },
+    {
+     "name": "Maikona",
+     "areas": []
+    },
+    {
+     "name": "Illeret",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Isiolo",
+   "towns": [
+    {
+     "name": "Isiolo",
+     "areas": []
+    },
+    {
+     "name": "Garbatulla",
+     "areas": []
+    },
+    {
+     "name": "Merti",
+     "areas": []
+    },
+    {
+     "name": "Kinna",
+     "areas": []
+    },
+    {
+     "name": "Oldonyiro",
+     "areas": []
+    },
+    {
+     "name": "Sericho",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Meru",
+   "towns": [
+    {
+     "name": "Meru",
+     "areas": []
+    },
+    {
+     "name": "Maua",
+     "areas": []
+    },
+    {
+     "name": "Nkubu",
+     "areas": []
+    },
+    {
+     "name": "Timau",
+     "areas": []
+    },
+    {
+     "name": "Kianjai",
+     "areas": []
+    },
+    {
+     "name": "Mitunguu",
+     "areas": []
+    },
+    {
+     "name": "Laare",
+     "areas": []
+    },
+    {
+     "name": "Mikinduri",
+     "areas": []
+    },
+    {
+     "name": "Muthara",
+     "areas": []
+    },
+    {
+     "name": "Kiirua",
+     "areas": []
+    },
+    {
+     "name": "Githongo",
+     "areas": []
+    },
+    {
+     "name": "Kangeta",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Tharaka-Nithi",
+   "towns": [
+    {
+     "name": "Chuka",
+     "areas": []
+    },
+    {
+     "name": "Chogoria",
+     "areas": []
+    },
+    {
+     "name": "Marimanti",
+     "areas": []
+    },
+    {
+     "name": "Kathwana",
+     "areas": []
+    },
+    {
+     "name": "Gatunga",
+     "areas": []
+    },
+    {
+     "name": "Ndagani",
+     "areas": []
+    },
+    {
+     "name": "Chiakariga",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Embu",
+   "towns": [
+    {
+     "name": "Embu",
+     "areas": []
+    },
+    {
+     "name": "Runyenjes",
+     "areas": []
+    },
+    {
+     "name": "Siakago",
+     "areas": []
+    },
+    {
+     "name": "Kiritiri",
+     "areas": []
+    },
+    {
+     "name": "Ishiara",
+     "areas": []
+    },
+    {
+     "name": "Kianjokoma",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kitui",
+   "towns": [
+    {
+     "name": "Kitui",
+     "areas": []
+    },
+    {
+     "name": "Mwingi",
+     "areas": []
+    },
+    {
+     "name": "Mutomo",
+     "areas": []
+    },
+    {
+     "name": "Zombe",
+     "areas": []
+    },
+    {
+     "name": "Ikutha",
+     "areas": []
+    },
+    {
+     "name": "Kyuso",
+     "areas": []
+    },
+    {
+     "name": "Migwani",
+     "areas": []
+    },
+    {
+     "name": "Kauwi",
+     "areas": []
+    },
+    {
+     "name": "Kwa Vonza",
+     "areas": []
+    },
+    {
+     "name": "Mui",
+     "areas": []
+    },
+    {
+     "name": "Tseikuru",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Machakos",
+   "towns": [
+    {
+     "name": "Machakos Town",
+     "areas": []
+    },
+    {
+     "name": "Athi River",
+     "areas": []
+    },
+    {
+     "name": "Syokimau",
+     "areas": []
+    },
+    {
+     "name": "Mlolongo",
+     "areas": []
+    },
+    {
+     "name": "Kangundo",
+     "areas": []
+    },
+    {
+     "name": "Tala",
+     "areas": []
+    },
+    {
+     "name": "Matuu",
+     "areas": []
+    },
+    {
+     "name": "Mwala",
+     "areas": []
+    },
+    {
+     "name": "Masinga",
+     "areas": []
+    },
+    {
+     "name": "Kathiani",
+     "areas": []
+    },
+    {
+     "name": "Kyumbi",
+     "areas": []
+    },
+    {
+     "name": "Konza",
+     "areas": []
+    },
+    {
+     "name": "Katani",
+     "areas": []
+    },
+    {
+     "name": "Joska",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Makueni",
+   "towns": [
+    {
+     "name": "Wote",
+     "areas": []
+    },
+    {
+     "name": "Makindu",
+     "areas": []
+    },
+    {
+     "name": "Kibwezi",
+     "areas": []
+    },
+    {
+     "name": "Emali",
+     "areas": []
+    },
+    {
+     "name": "Sultan Hamud",
+     "areas": []
+    },
+    {
+     "name": "Mtito Andei",
+     "areas": []
+    },
+    {
+     "name": "Kathonzweni",
+     "areas": []
+    },
+    {
+     "name": "Kilome",
+     "areas": []
+    },
+    {
+     "name": "Mbooni",
+     "areas": []
+    },
+    {
+     "name": "Tawa",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Nyandarua",
+   "towns": [
+    {
+     "name": "Ol Kalou",
+     "areas": []
+    },
+    {
+     "name": "Engineer",
+     "areas": []
+    },
+    {
+     "name": "Ndaragwa",
+     "areas": []
+    },
+    {
+     "name": "Njabini",
+     "areas": []
+    },
+    {
+     "name": "North Kinangop",
+     "areas": []
+    },
+    {
+     "name": "Ol Joro Orok",
+     "areas": []
+    },
+    {
+     "name": "Mirangine",
+     "areas": []
+    },
+    {
+     "name": "Magumu",
+     "areas": []
+    },
+    {
+     "name": "Kipipiri",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Nyeri",
+   "towns": [
+    {
+     "name": "Nyeri Town",
+     "areas": []
+    },
+    {
+     "name": "Karatina",
+     "areas": []
+    },
+    {
+     "name": "Othaya",
+     "areas": []
+    },
+    {
+     "name": "Mukurweini",
+     "areas": []
+    },
+    {
+     "name": "Mweiga",
+     "areas": []
+    },
+    {
+     "name": "Naro Moru",
+     "areas": []
+    },
+    {
+     "name": "Chaka",
+     "areas": []
+    },
+    {
+     "name": "Kiganjo",
+     "areas": []
+    },
+    {
+     "name": "Endarasha",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kirinyaga",
+   "towns": [
+    {
+     "name": "Kerugoya",
+     "areas": []
+    },
+    {
+     "name": "Kutus",
+     "areas": []
+    },
+    {
+     "name": "Sagana",
+     "areas": []
+    },
+    {
+     "name": "Wanguru",
+     "areas": []
+    },
+    {
+     "name": "Kagio",
+     "areas": []
+    },
+    {
+     "name": "Baricho",
+     "areas": []
+    },
+    {
+     "name": "Kianyaga",
+     "areas": []
+    },
+    {
+     "name": "Mwea",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Murang'a",
+   "towns": [
+    {
+     "name": "Murang'a",
+     "areas": []
+    },
+    {
+     "name": "Kenol",
+     "areas": []
+    },
+    {
+     "name": "Maragua",
+     "areas": []
+    },
+    {
+     "name": "Kangari",
+     "areas": []
+    },
+    {
+     "name": "Kandara",
+     "areas": []
+    },
+    {
+     "name": "Kangema",
+     "areas": []
+    },
+    {
+     "name": "Makuyu",
+     "areas": []
+    },
+    {
+     "name": "Kiria-ini",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kiambu",
+   "towns": [
+    {
+     "name": "Thika",
+     "areas": [
+      "Landless",
+      "Makongeni",
+      "Section 9",
+      "Ngoigwa"
+     ]
+    },
+    {
+     "name": "Kiambu",
+     "areas": []
+    },
+    {
+     "name": "Ruiru",
+     "areas": []
+    },
+    {
+     "name": "Juja",
+     "areas": []
+    },
+    {
+     "name": "Limuru",
+     "areas": []
+    },
+    {
+     "name": "Kikuyu",
+     "areas": []
+    },
+    {
+     "name": "Karuri",
+     "areas": []
+    },
+    {
+     "name": "Banana",
+     "areas": []
+    },
+    {
+     "name": "Githunguri",
+     "areas": []
+    },
+    {
+     "name": "Gatundu",
+     "areas": []
+    },
+    {
+     "name": "Lari",
+     "areas": []
+    },
+    {
+     "name": "Tigoni",
+     "areas": []
+    },
+    {
+     "name": "Kijabe",
+     "areas": []
+    },
+    {
+     "name": "Kinoo",
+     "areas": []
+    },
+    {
+     "name": "Uthiru",
+     "areas": []
+    },
+    {
+     "name": "Wangige",
+     "areas": []
+    },
+    {
+     "name": "Ndenderu",
+     "areas": []
+    },
+    {
+     "name": "Zambezi",
+     "areas": []
+    },
+    {
+     "name": "Kamiti",
+     "areas": []
+    },
+    {
+     "name": "Tatu City",
+     "areas": []
+    },
+    {
+     "name": "Kahawa Wendani",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Turkana",
+   "towns": [
+    {
+     "name": "Lodwar",
+     "areas": []
+    },
+    {
+     "name": "Kakuma",
+     "areas": []
+    },
+    {
+     "name": "Lokichogio",
+     "areas": []
+    },
+    {
+     "name": "Lokichar",
+     "areas": []
+    },
+    {
+     "name": "Lokitaung",
+     "areas": []
+    },
+    {
+     "name": "Kalokol",
+     "areas": []
+    },
+    {
+     "name": "Lokori",
+     "areas": []
+    },
+    {
+     "name": "Kainuk",
+     "areas": []
+    },
+    {
+     "name": "Lorugum",
+     "areas": []
+    },
+    {
+     "name": "Katilu",
+     "areas": []
+    },
+    {
+     "name": "Lokiriama",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "West Pokot",
+   "towns": [
+    {
+     "name": "Kapenguria",
+     "areas": []
+    },
+    {
+     "name": "Makutano",
+     "areas": []
+    },
+    {
+     "name": "Sigor",
+     "areas": []
+    },
+    {
+     "name": "Chepareria",
+     "areas": []
+    },
+    {
+     "name": "Kacheliba",
+     "areas": []
+    },
+    {
+     "name": "Ortum",
+     "areas": []
+    },
+    {
+     "name": "Alale",
+     "areas": []
+    },
+    {
+     "name": "Konyao",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Samburu",
+   "towns": [
+    {
+     "name": "Maralal",
+     "areas": []
+    },
+    {
+     "name": "Baragoi",
+     "areas": []
+    },
+    {
+     "name": "Wamba",
+     "areas": []
+    },
+    {
+     "name": "Archers Post",
+     "areas": []
+    },
+    {
+     "name": "Suguta Marmar",
+     "areas": []
+    },
+    {
+     "name": "South Horr",
+     "areas": []
+    },
+    {
+     "name": "Poro",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Trans Nzoia",
+   "towns": [
+    {
+     "name": "Kitale",
+     "areas": []
+    },
+    {
+     "name": "Kiminini",
+     "areas": []
+    },
+    {
+     "name": "Endebess",
+     "areas": []
+    },
+    {
+     "name": "Maili Saba",
+     "areas": []
+    },
+    {
+     "name": "Saboti",
+     "areas": []
+    },
+    {
+     "name": "Matisi",
+     "areas": []
+    },
+    {
+     "name": "Kachibora",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Uasin Gishu",
+   "towns": [
+    {
+     "name": "Eldoret",
+     "areas": [
+      "Elgon View",
+      "Pioneer",
+      "Kapsoya",
+      "Langas",
+      "Huruma",
+      "Kimumu",
+      "Maili Nne",
+      "Annex",
+      "West Indies",
+      "Chepkoilel"
+     ]
+    },
+    {
+     "name": "Burnt Forest",
+     "areas": []
+    },
+    {
+     "name": "Moiben",
+     "areas": []
+    },
+    {
+     "name": "Turbo",
+     "areas": []
+    },
+    {
+     "name": "Soy",
+     "areas": []
+    },
+    {
+     "name": "Ziwa",
+     "areas": []
+    },
+    {
+     "name": "Kesses",
+     "areas": []
+    },
+    {
+     "name": "Kapseret",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Elgeyo-Marakwet",
+   "towns": [
+    {
+     "name": "Iten",
+     "areas": []
+    },
+    {
+     "name": "Kapsowar",
+     "areas": []
+    },
+    {
+     "name": "Chebiemit",
+     "areas": []
+    },
+    {
+     "name": "Tambach",
+     "areas": []
+    },
+    {
+     "name": "Kamwosor",
+     "areas": []
+    },
+    {
+     "name": "Chepkorio",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Nandi",
+   "towns": [
+    {
+     "name": "Kapsabet",
+     "areas": []
+    },
+    {
+     "name": "Nandi Hills",
+     "areas": []
+    },
+    {
+     "name": "Mosoriot",
+     "areas": []
+    },
+    {
+     "name": "Kobujoi",
+     "areas": []
+    },
+    {
+     "name": "Chepterit",
+     "areas": []
+    },
+    {
+     "name": "Lessos",
+     "areas": []
+    },
+    {
+     "name": "Kabiyet",
+     "areas": []
+    },
+    {
+     "name": "Aldai",
+     "areas": []
+    },
+    {
+     "name": "Kilibwoni",
+     "areas": []
+    },
+    {
+     "name": "Kaptumo",
+     "areas": []
+    },
+    {
+     "name": "Meteitei",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Baringo",
+   "towns": [
+    {
+     "name": "Kabarnet",
+     "areas": []
+    },
+    {
+     "name": "Eldama Ravine",
+     "areas": []
+    },
+    {
+     "name": "Marigat",
+     "areas": []
+    },
+    {
+     "name": "Kabartonjo",
+     "areas": []
+    },
+    {
+     "name": "Mogotio",
+     "areas": []
+    },
+    {
+     "name": "Chemolingot",
+     "areas": []
+    },
+    {
+     "name": "Loruk",
+     "areas": []
+    },
+    {
+     "name": "Barwessa",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Laikipia",
+   "towns": [
+    {
+     "name": "Nanyuki",
+     "areas": []
+    },
+    {
+     "name": "Nyahururu",
+     "areas": []
+    },
+    {
+     "name": "Rumuruti",
+     "areas": []
+    },
+    {
+     "name": "Dol Dol",
+     "areas": []
+    },
+    {
+     "name": "Kinamba",
+     "areas": []
+    },
+    {
+     "name": "Sipili",
+     "areas": []
+    },
+    {
+     "name": "Naibor",
+     "areas": []
+    },
+    {
+     "name": "Ngobit",
+     "areas": []
+    },
+    {
+     "name": "Wiyumiririe",
+     "areas": []
+    },
+    {
+     "name": "Ol Moran",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Nakuru",
+   "towns": [
+    {
+     "name": "Nakuru",
+     "areas": [
+      "Section 58",
+      "Milimani",
+      "Lanet",
+      "Free Area",
+      "Shabab",
+      "Pipeline",
+      "Kiamunyi",
+      "London",
+      "Bondeni",
+      "Kaptembwo",
+      "Flamingo",
+      "Mwariki",
+      "Barnabas",
+      "Ngata",
+      "Langa Langa"
+     ]
+    },
+    {
+     "name": "Naivasha",
+     "areas": []
+    },
+    {
+     "name": "Gilgil",
+     "areas": []
+    },
+    {
+     "name": "Molo",
+     "areas": []
+    },
+    {
+     "name": "Njoro",
+     "areas": []
+    },
+    {
+     "name": "Subukia",
+     "areas": []
+    },
+    {
+     "name": "Rongai",
+     "areas": []
+    },
+    {
+     "name": "Bahati",
+     "areas": []
+    },
+    {
+     "name": "Mau Narok",
+     "areas": []
+    },
+    {
+     "name": "Mai Mahiu",
+     "areas": []
+    },
+    {
+     "name": "Elementaita",
+     "areas": []
+    },
+    {
+     "name": "Salgaa",
+     "areas": []
+    },
+    {
+     "name": "Olenguruone",
+     "areas": []
+    },
+    {
+     "name": "Dundori",
+     "areas": []
+    },
+    {
+     "name": "Mau Summit",
+     "areas": []
+    },
+    {
+     "name": "Kampi ya Moto",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Narok",
+   "towns": [
+    {
+     "name": "Narok",
+     "areas": []
+    },
+    {
+     "name": "Kilgoris",
+     "areas": []
+    },
+    {
+     "name": "Ololulunga",
+     "areas": []
+    },
+    {
+     "name": "Mulot",
+     "areas": []
+    },
+    {
+     "name": "Lemek",
+     "areas": []
+    },
+    {
+     "name": "Suswa",
+     "areas": []
+    },
+    {
+     "name": "Aitong",
+     "areas": []
+    },
+    {
+     "name": "Sekenani",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kajiado",
+   "towns": [
+    {
+     "name": "Kajiado",
+     "areas": []
+    },
+    {
+     "name": "Kitengela",
+     "areas": []
+    },
+    {
+     "name": "Ngong",
+     "areas": []
+    },
+    {
+     "name": "Ongata Rongai",
+     "areas": []
+    },
+    {
+     "name": "Kiserian",
+     "areas": []
+    },
+    {
+     "name": "Isinya",
+     "areas": []
+    },
+    {
+     "name": "Namanga",
+     "areas": []
+    },
+    {
+     "name": "Loitokitok",
+     "areas": []
+    },
+    {
+     "name": "Magadi",
+     "areas": []
+    },
+    {
+     "name": "Bissil",
+     "areas": []
+    },
+    {
+     "name": "Kisaju",
+     "areas": []
+    },
+    {
+     "name": "Embulbul",
+     "areas": []
+    },
+    {
+     "name": "Matasia",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kericho",
+   "towns": [
+    {
+     "name": "Kericho",
+     "areas": []
+    },
+    {
+     "name": "Litein",
+     "areas": []
+    },
+    {
+     "name": "Londiani",
+     "areas": []
+    },
+    {
+     "name": "Kipkelion",
+     "areas": []
+    },
+    {
+     "name": "Sosiot",
+     "areas": []
+    },
+    {
+     "name": "Kapkatet",
+     "areas": []
+    },
+    {
+     "name": "Kedowa",
+     "areas": []
+    },
+    {
+     "name": "Fort Ternan",
+     "areas": []
+    },
+    {
+     "name": "Roret",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Bomet",
+   "towns": [
+    {
+     "name": "Bomet",
+     "areas": []
+    },
+    {
+     "name": "Sotik",
+     "areas": []
+    },
+    {
+     "name": "Longisa",
+     "areas": []
+    },
+    {
+     "name": "Silibwet",
+     "areas": []
+    },
+    {
+     "name": "Ndanai",
+     "areas": []
+    },
+    {
+     "name": "Mogogosiek",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kakamega",
+   "towns": [
+    {
+     "name": "Kakamega",
+     "areas": []
+    },
+    {
+     "name": "Mumias",
+     "areas": []
+    },
+    {
+     "name": "Malava",
+     "areas": []
+    },
+    {
+     "name": "Butere",
+     "areas": []
+    },
+    {
+     "name": "Matungu",
+     "areas": []
+    },
+    {
+     "name": "Shinyalu",
+     "areas": []
+    },
+    {
+     "name": "Khayega",
+     "areas": []
+    },
+    {
+     "name": "Iguhu",
+     "areas": []
+    },
+    {
+     "name": "Lumakanda",
+     "areas": []
+    },
+    {
+     "name": "Mautuma",
+     "areas": []
+    },
+    {
+     "name": "Navakholo",
+     "areas": []
+    },
+    {
+     "name": "Shianda",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Vihiga",
+   "towns": [
+    {
+     "name": "Mbale",
+     "areas": []
+    },
+    {
+     "name": "Luanda",
+     "areas": []
+    },
+    {
+     "name": "Chavakali",
+     "areas": []
+    },
+    {
+     "name": "Serem",
+     "areas": []
+    },
+    {
+     "name": "Kaimosi",
+     "areas": []
+    },
+    {
+     "name": "Hamisi",
+     "areas": []
+    },
+    {
+     "name": "Vihiga",
+     "areas": []
+    },
+    {
+     "name": "Gambogi",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Bungoma",
+   "towns": [
+    {
+     "name": "Bungoma",
+     "areas": []
+    },
+    {
+     "name": "Webuye",
+     "areas": []
+    },
+    {
+     "name": "Kimilili",
+     "areas": []
+    },
+    {
+     "name": "Chwele",
+     "areas": []
+    },
+    {
+     "name": "Malakisi",
+     "areas": []
+    },
+    {
+     "name": "Sirisia",
+     "areas": []
+    },
+    {
+     "name": "Kapsokwony",
+     "areas": []
+    },
+    {
+     "name": "Cheptais",
+     "areas": []
+    },
+    {
+     "name": "Naitiri",
+     "areas": []
+    },
+    {
+     "name": "Bokoli",
+     "areas": []
+    },
+    {
+     "name": "Kopsiro",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Busia",
+   "towns": [
+    {
+     "name": "Busia",
+     "areas": []
+    },
+    {
+     "name": "Malaba",
+     "areas": []
+    },
+    {
+     "name": "Port Victoria",
+     "areas": []
+    },
+    {
+     "name": "Funyula",
+     "areas": []
+    },
+    {
+     "name": "Nambale",
+     "areas": []
+    },
+    {
+     "name": "Butula",
+     "areas": []
+    },
+    {
+     "name": "Bumala",
+     "areas": []
+    },
+    {
+     "name": "Amagoro",
+     "areas": []
+    },
+    {
+     "name": "Sio Port",
+     "areas": []
+    },
+    {
+     "name": "Alupe",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Siaya",
+   "towns": [
+    {
+     "name": "Siaya",
+     "areas": []
+    },
+    {
+     "name": "Bondo",
+     "areas": []
+    },
+    {
+     "name": "Ugunja",
+     "areas": []
+    },
+    {
+     "name": "Ukwala",
+     "areas": []
+    },
+    {
+     "name": "Yala",
+     "areas": []
+    },
+    {
+     "name": "Usenge",
+     "areas": []
+    },
+    {
+     "name": "Sega",
+     "areas": []
+    },
+    {
+     "name": "Boro",
+     "areas": []
+    },
+    {
+     "name": "Madiany",
+     "areas": []
+    },
+    {
+     "name": "Rarieda",
+     "areas": []
+    },
+    {
+     "name": "Ndori",
+     "areas": []
+    },
+    {
+     "name": "Akala",
+     "areas": []
+    },
+    {
+     "name": "Wagai",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kisumu",
+   "towns": [
+    {
+     "name": "Kisumu",
+     "areas": [
+      "Milimani",
+      "Mamboleo",
+      "Nyalenda",
+      "Kondele",
+      "Migosi",
+      "Tom Mboya",
+      "Kibuye",
+      "Lolwe",
+      "Dunga",
+      "Manyatta"
+     ]
+    },
+    {
+     "name": "Ahero",
+     "areas": []
+    },
+    {
+     "name": "Maseno",
+     "areas": []
+    },
+    {
+     "name": "Muhoroni",
+     "areas": []
+    },
+    {
+     "name": "Katito",
+     "areas": []
+    },
+    {
+     "name": "Kombewa",
+     "areas": []
+    },
+    {
+     "name": "Awasi",
+     "areas": []
+    },
+    {
+     "name": "Chemelil",
+     "areas": []
+    },
+    {
+     "name": "Sondu",
+     "areas": []
+    },
+    {
+     "name": "Kadibo",
+     "areas": []
+    },
+    {
+     "name": "Miwani",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Homa Bay",
+   "towns": [
+    {
+     "name": "Homa Bay",
+     "areas": []
+    },
+    {
+     "name": "Mbita",
+     "areas": []
+    },
+    {
+     "name": "Oyugis",
+     "areas": []
+    },
+    {
+     "name": "Kendu Bay",
+     "areas": []
+    },
+    {
+     "name": "Rodi Kopany",
+     "areas": []
+    },
+    {
+     "name": "Ndhiwa",
+     "areas": []
+    },
+    {
+     "name": "Rangwe",
+     "areas": []
+    },
+    {
+     "name": "Kosele",
+     "areas": []
+    },
+    {
+     "name": "Sindo",
+     "areas": []
+    },
+    {
+     "name": "Kasipul",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Migori",
+   "towns": [
+    {
+     "name": "Migori",
+     "areas": []
+    },
+    {
+     "name": "Rongo",
+     "areas": []
+    },
+    {
+     "name": "Awendo",
+     "areas": []
+    },
+    {
+     "name": "Isebania",
+     "areas": []
+    },
+    {
+     "name": "Kehancha",
+     "areas": []
+    },
+    {
+     "name": "Uriri",
+     "areas": []
+    },
+    {
+     "name": "Macalder",
+     "areas": []
+    },
+    {
+     "name": "Sirare",
+     "areas": []
+    },
+    {
+     "name": "Karungu",
+     "areas": []
+    },
+    {
+     "name": "Muhuru Bay",
+     "areas": []
+    },
+    {
+     "name": "Nyatike",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Kisii",
+   "towns": [
+    {
+     "name": "Kisii",
+     "areas": []
+    },
+    {
+     "name": "Ogembo",
+     "areas": []
+    },
+    {
+     "name": "Nyamache",
+     "areas": []
+    },
+    {
+     "name": "Suneka",
+     "areas": []
+    },
+    {
+     "name": "Marani",
+     "areas": []
+    },
+    {
+     "name": "Masimba",
+     "areas": []
+    },
+    {
+     "name": "Kenyenya",
+     "areas": []
+    },
+    {
+     "name": "Nyamarambe",
+     "areas": []
+    }
+   ]
+  },
+  {
+   "county": "Nyamira",
+   "towns": [
+    {
+     "name": "Nyamira",
+     "areas": []
+    },
+    {
+     "name": "Keroka",
+     "areas": []
+    },
+    {
+     "name": "Nyansiongo",
+     "areas": []
+    },
+    {
+     "name": "Ekerenyo",
+     "areas": []
+    },
+    {
+     "name": "Manga",
+     "areas": []
+    },
+    {
+     "name": "Kijauri",
+     "areas": []
+    },
+    {
+     "name": "Magwagwa",
+     "areas": []
+    }
+   ]
+  }
+ ]
+}
