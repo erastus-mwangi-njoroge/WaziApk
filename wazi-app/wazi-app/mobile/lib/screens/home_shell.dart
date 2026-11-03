@@ -67,7 +67,8 @@ class _AccountTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (user == null) {
+    final u = user;
+    if (u == null) {
       return Scaffold(
         appBar: AppBar(title: const Text("Account")),
         body: Center(
@@ -93,16 +94,16 @@ class _AccountTab extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         children: [
           Row(children: [
-            CircleAvatar(radius: 26, backgroundColor: WaziColors.rust, child: Text(user.name.isNotEmpty ? user.name[0].toUpperCase() : "U", style: const TextStyle(color: Colors.white, fontSize: 18))),
+            CircleAvatar(radius: 26, backgroundColor: WaziColors.rust, child: Text(u.name.isNotEmpty ? u.name[0].toUpperCase() : "U", style: const TextStyle(color: Colors.white, fontSize: 18))),
             const SizedBox(width: 14),
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(user.name, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 17)),
-              Text(user.role == "owner" ? "Property owner" : "Tenant", style: const TextStyle(color: WaziColors.inkSoft)),
+              Text(u.name, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 17)),
+              Text(u.role == "owner" ? "Property owner" : "Tenant", style: const TextStyle(color: WaziColors.inkSoft)),
             ]),
           ]),
           const SizedBox(height: 24),
-          _InfoRow(label: "Email", value: user.email),
-          _InfoRow(label: "Phone", value: user.phone.isEmpty ? "—" : user.phone),
+          _InfoRow(label: "Email", value: u.email),
+          _InfoRow(label: "Phone", value: u.phone.isEmpty ? "—" : u.phone),
           const SizedBox(height: 24),
           OutlinedButton(
             onPressed: () => context.read<AppState>().logout(),

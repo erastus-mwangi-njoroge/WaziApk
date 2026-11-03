@@ -47,6 +47,11 @@ g = gradle.read_text(encoding="utf-8")
 g2, n = re.subn(r"(minSdk(?:Version)?\s*=?\s*)(?:flutter\.minSdkVersion|\d+)", r"\g<1>" + min_sdk, g, count=1)
 if n != 1:
     sys.exit(f"Could not find a minSdk setting in {gradle} — template changed?")
+# Firebase/image_picker/url_launcher plugins need NDK 27; Flutter 3.32's default is 26.
+NDK = "27.0.12077973"
+g2, n = re.subn(r"ndkVersion\s*=\s*(?:flutter\.ndkVersion|\"[^\"]*\")", f'ndkVersion = "{NDK}"', g2, count=1)
+if n != 1:
+    sys.exit(f"Could not find ndkVersion in {gradle} — template changed?")
 gradle.write_text(g2, encoding="utf-8")
 
-print(f"patched {manifest} and {gradle} (minSdk {min_sdk})")
+print(f"patched {manifest} and {gradle} (minSdk {min_sdk}, NDK {NDK})")
