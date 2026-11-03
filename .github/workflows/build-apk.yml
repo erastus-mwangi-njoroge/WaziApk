@@ -105,8 +105,8 @@ jobs:
         run: |
           APK=build/app/outputs/flutter-apk/app-release.apk
           AAPT="$(ls -d "$ANDROID_HOME"/build-tools/*/aapt2 | sort -V | tail -1)"
-          "$AAPT" dump badging "$APK" | grep -E "^package:|^sdkVersion|^targetSdkVersion|^application-label:"
-          "$AAPT" dump badging "$APK" | grep -q "^sdkVersion:'${MIN_SDK}'" \
+                    "$AAPT" dump badging "$APK" | grep -E "^package:|^minSdkVersion|^sdkVersion|^targetSdkVersion|^application-label:"
+          "$AAPT" dump badging "$APK" | grep -qE "^(min)?[sS]dkVersion:'${MIN_SDK}'" \
             || { echo "::error::APK minSdk is not ${MIN_SDK}"; exit 1; }
 
       - name: Name the APK
